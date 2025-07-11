@@ -80,22 +80,20 @@
 <script>
 import axios from 'axios';
 export default {
-  name: 'PageContent',
-  props: {
-    msg: String
-  },
+    name: 'PageContent',
+    props: {
+        msg: String
+    },
     data () {
-        return {
-            info: null
-        }
-    }
-    /*
+            return {
+                info: null
+            }
+    },
     mounted () {
         axios
-            .get('http://localhost:1337/api/espers')
+            .get('http://144.24.195.162:1337/api/espers')
             .then(response => (this.info = response.data))
     }
-    */
 }
 </script>
 
